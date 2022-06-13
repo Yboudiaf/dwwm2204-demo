@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Exercice 4.5 palindrome": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
+    }
+  }
+}
