@@ -1,8 +1,7 @@
-﻿int [] yacine = new int[10];
+﻿int [] yacineBoudiaf = new int[10];
 
 for (int i = 0; i < 10; i++)
 {
-    yacine[i] = Convert.ToInt16(Console.ReadLine());
-    Console.WriteLine(yacine[i]);
+    yacineBoudiaf[i] = Convert.ToInt16(Console.ReadLine());
+    Console.WriteLine(yacineBoudiaf.ElementAt(i));
    // Array.Sort(yacine);
-} 
