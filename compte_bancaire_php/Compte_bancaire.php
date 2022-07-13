@@ -81,27 +81,35 @@ public function crediter(float $montant):void
 }
 
 //Debite un montant au solde si le solde le permet
-public function debiter(float $montant):void
+public function debiter(float $montant):bool
 {
     if($this->son_solde + $this->decouvert_autoriser >= $montant )
     {
          $this -> son_solde = $this-> son_solde - $montant;
+         return true;
     }
     else
     {
         echo " Operation non autoriser".PHP_EOL;
+        return false;
     }  
 }
 
 //transfert de l'argent
-public function transfert(float $montant, Compte_bancaire $autreCompte):void
+public function transfert(float $montant, Compte_bancaire $autreCompte):bool
 {
-    $this->debiter($montant);
-    if($this -> son_solde + $this -> decouvert_autoriser >= $montant )
+    if($montant>0)
+    {
+        if($this->debiter($montant) )
     {
         $autreCompte->crediter($montant);
+        return true;
+        echo'ok'.PHP_EOL;
     }        
-
+    }
+    
+    return false;
+    echo 'no'.PHP_EOL;
 }
 
 
@@ -112,4 +120,19 @@ function __toString()
     return "Nom \t=> \t" . $this->le_nom_de_son_proprietaire . "\nsolde \t=> \t" . $this->son_solde . PHP_EOL;
 
 }
+public function superieur(compte_bancaire $compte,$autreCompte) : void
+{
+     
+if($compte-> get_son_solde() > $autreCompte->get_son_solde())
+{
+    
+    echo 'superieur'.PHP_EOL;
+
+}else{
+    
+    echo 'inferieur'.PHP_EOL;
+}
+
+}
+
 }
