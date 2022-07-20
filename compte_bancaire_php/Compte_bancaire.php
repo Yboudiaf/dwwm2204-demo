@@ -2,14 +2,14 @@
 declare(strict_types=1);
 class Compte_bancaire
 {
-  
+  //attribut
     private int $numero_de_compte;
     private string $le_nom_de_son_proprietaire;
     private float $son_solde;
     private int $decouvert_autoriser ;
 
 
-
+//constructeur
 public function __construct($numero_de_compte,$le_nom_de_son_proprietaire,$son_solde,$decouvert_autoriser)
 {
     $this ->  numero_de_compte = $numero_de_compte;
