@@ -1,0 +1,15 @@
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\bin\Debug\net6.0\Exercice 4.5 palindrome.exe
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\bin\Debug\net6.0\Exercice 4.5 palindrome.deps.json
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\bin\Debug\net6.0\Exercice 4.5 palindrome.runtimeconfig.json
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\bin\Debug\net6.0\Exercice 4.5 palindrome.dll
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\bin\Debug\net6.0\Exercice 4.5 palindrome.pdb
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.csproj.AssemblyReference.cache
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.AssemblyInfoInputs.cache
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.AssemblyInfo.cs
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.csproj.CoreCompileInputs.cache
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.dll
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\refint\Exercice 4.5 palindrome.dll
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.pdb
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\Exercice 4.5 palindrome.genruntimeconfig.cache
+C:\Users\Stagiaire\Documents\GitHub\dwwm2204-demo\Exercice 4.5 palindrome\Exercice 4.5 palindrome\obj\Debug\net6.0\ref\Exercice 4.5 palindrome.dll

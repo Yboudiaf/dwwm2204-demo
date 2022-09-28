@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Exercice 4.5 palindrome/1.0.0": {
+        "runtime": {
+          "Exercice 4.5 palindrome.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exercice 4.5 palindrome/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
