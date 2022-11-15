@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    font-size: 62.5%;
+    background-image: url(./images/bg_motif.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+html{
+    font-size: 1.6em; 
+}
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top:0px;
+  border-bottom:1px solid white;
+  margin-left: 0;
+}
+nav ul {
+  list-style: none;
+  float: right;
+   margin-right: 60px;
+   margin-top: 40px;
+}
+nav ul li{
+     display: inline;
+     padding:20px;     
+     position: relative;
+}
+nav ul ul{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: none;
+}
+nav ul ul li{
+    display: block;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+  
+}
+nav ul li:hover ul{
+    display: block;
+   
+}
+nav ul a {
+  font-family: 'Economica';
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;;
+}
+nav ul a:hover{
+    color: red;
+}
+
+header img{
+   margin-top: 3.5em;
+   margin-left: 15em; 
+}
+.actif:hover{
+    color: red;
+}
+
+main{
+    margin-left: 25em;
+    
+    background-color: rgba(98, 96, 96, 0.494);
+    text-align: center;
+    background-image: url(images/bg_g.png);
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 55em;
+    margin-top: 4.5em  
+}
+
+#raisin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5em 1.5em  1.5em ;
+    text-align: center; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+} 
+#raisin img{ 
+   margin-bottom: 1px;
+   padding-bottom: 30px; 
+}
+#raisin h1{
+    margin-top: -1rem;
+    background-color: white;
+    color: rgba(107, 11, 11, 0.485); 
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.choix{
+   justify-content: space-around;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: nowrap; 
+    flex-direction: row;
+    margin-left: 1em;  
+}
+h1{
+    font-size: 1.5em;
+    font-family: "Fasthand";
+    text-align: center;
+    color: #fff;
+}
+.choix img{
+     float: right;
+}
+.choix a{
+    display: inline;
+    flex-direction: row;
+    font-size: 1.2em;
+    padding-left: 2em;
+    background-color: darkgray;
+    color: #fff;
+    padding-left: 0.2em;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.les_produit {
+  
+   background-image: url(images/bg_g.png);
+   background-repeat: no-repeat;
+}
+.les_produit p{
+    color: black;
+}
+.le_vigneron{
+    
+    background-image: url(images/bg_g.png);
+    background-repeat: no-repeat;
+}
+.le_vigneron p{
+    color: black;
+}
+.la_cave{
+   
+    background-image: url(images/bg_g.png);
+    background-repeat: no-repeat;
+}
+.la_cave p{
+    color: black;
+}
+.la_cave a:hover{
+   color: red;
+   background-color: rgba(98, 96, 96, 0.494);
+   transition: duration 2sec; ;
+   transform: rotate(20deg)scale(1.5);
+    transform: translate(30px, 20px) ;
+    transition-timing-function: linear;
+  
+}
+
+
+section{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 22.5%;
+    margin-right: 17.3%;
+    background-color: rgba(183, 177, 177, 0.219);
+    height: 23em;
+}
+.selection{
+    background-color: rgba(98, 96, 96, 0.791);
+    width: 58em;
+    height: 20.5em;
+    text-align: center;
+    margin-left: 0.7em;
+}
+.selection h1{
+    margin: 0;
+}
+.selection li a{
+    color: black;
+    font-weight: bold;
+   
+}
+.selection ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+.accesoires{
+    
+    background-color: rgba(98, 96, 96, 0.824);
+    height: 20.5em;
+    margin-right: 0.7em;
+    margin-left: 1.7em;
+}
+.accesoires h2{
+    margin-left: 8em;
+   
+}
+.accesoires h3{
+   
+    text-align: center;
+    color: #fff;
+    margin-left: 5em;
+}
+.accesoires p{
+
+    color: black;
+    margin-left: 15em;
+    margin-top: 0;
+}
+
+section h1{
+    text-align: center;
+    margin-left: 1em;
+    font-size: 2.2em;
+}
+section img{
+    position: absolute;
+    top: 67em;
+    border: solid 3px #fff;
+    margin-left: 0.7em;
+}
+section a{
+    top: 80em;
+    right: 32em;
+}
+.accesoires a{
+    margin-left: 15em;
+    margin-top: 15em;
+    top: 0em;
+    color: #fff;
+    font-size: 30px;
+   background-color: darkgray;
+   text-decoration: none;
+}
+footer{
+    background-color: rgba(183, 177, 177, 0.219);
+    width: 67.5em;
+    margin-left: 25.2em;
+   
+}
+footer hr{
+    margin-top: 1em;
+}
+footer img{
+    float: right; 
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0; 
+     list-style-type: none;
+}
+footer ul li{
+    padding-top: 2.5em;
+    font-size: 1.5em;
+    margin-left: 2em;
+    font-family: 'Economica';
+   
+}
+
+
