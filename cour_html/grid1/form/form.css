@@ -1,0 +1,104 @@
+body{
+    font-size: 62.5%;
+}
+
+html{
+    font-size: 1.6em;
+  
+}
+
+form{
+margin-left: 40em;
+ margin-top: 5em;
+ padding-top: 0;
+ background-color: #33aaff;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 38em;
+ height: 45em;
+}
+.name{ 
+    padding-left: 1em;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+.Phone{
+    padding-left: 1em;
+}
+.Email{
+    padding-left: 1em;
+}
+.name input{
+    margin-left: 18.5em;
+    margin-bottom: 0.5em;
+    width: 20em;
+    height: 2.5em;
+}
+.Phone input{
+    margin-left: 22.6em;
+    margin-bottom: 0.5em;
+    width: 20em;
+    height: 2.5em;
+}
+.Email input{
+    margin-left: 22.7em;
+    margin-bottom: 0.5em;
+    width: 20em;
+    height: 2.5em;
+    
+}
+.PEP {
+    text-align: left;
+    padding-left: 3em;  
+}
+.ADR{
+    text-align: left;
+    padding-left: 3em;  
+}
+.Date input{
+    margin-left: 16em;
+    margin-bottom: 0.5em;
+    width: 20em;
+    height: 2.5em;
+
+}
+#place{
+    margin-left: 18.6em;
+    padding-top: 0;
+    margin-bottom: 0.5em;
+    width:20.4em;
+    height: 3em;
+}
+label{
+    margin-left: 1em;
+}
+
+.OtherNeeds input{
+margin-left: 15.2em;
+margin-bottom: 0.5em;
+width: 19.8em;
+height: 2.5em;
+
+}
+
+.instruction input{
+    margin-left: 22.6em;
+    padding-top: 0;
+    margin-bottom: 0.5em;
+    width: 20em;
+    height: 5em;
+}
+.submit{
+ width: 95%;
+ height: 3em;
+ background-color: black;
+ padding-top: 1em;
+ text-align: center;
+ font-size: 1em;
+ margin-left: 1em;
+}
+div label{
+    margin-left: 1em;
+}

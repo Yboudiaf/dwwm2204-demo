@@ -1,0 +1,24 @@
+{
+    "name": "y-boudiaf/utilisateurs-2204",
+    "description": "Ma super application de gestion d'utilisations",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yboudaf",
+            "email": "yboudiaf@arfp.asso.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Users\\" : "./",
+            "Toto\\" : "./chemin"
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+    
+body{
+    font-size: 1.6em;
+    color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+header{
+    background-color: rgb(209,243,195);
+    height: 10em;
+    width: 100%;
+}
+
+main,aside{
+    width: 80%;
+    min-height: 20em;
+}
+main{
+    background-color: rgba(185,229,238,0.45);
+   
+
+}
+aside{
+    background-color:rgb(253,239,222);
+    width: 20%;
+   
+}
+footer{
+   
+    background-color: #f7c5e8;
+    height: 10em;
+    width: 100%;
+}
+h1{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 1em;
+}

@@ -1,0 +1,15 @@
+
+body
+{
+background-color: blue;
+}
+h1
+{
+
+    background-color: rgb(189, 47, 255);
+    color: aqua;
+    width: 500px;
+    border: 2px solid red;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+}

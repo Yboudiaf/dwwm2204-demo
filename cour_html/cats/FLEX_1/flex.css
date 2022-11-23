@@ -1,0 +1,103 @@
+html{
+   font-size: 62.5%;
+}
+body{
+    font-size: 1.6em;
+}
+h1{
+    background-color:#CCDDFF ;
+    height: 5em;
+    padding-top: 2em;
+    margin-bottom: 0;
+    text-align: center;
+}
+h3{
+ width: 100%; 
+ height: 100%;
+ margin-top: 2em;
+ position: absolute;
+ margin-left: 20em;
+}
+.container{
+    display: flex;
+    height: 50em;
+    background-color: #CCDDFF;
+    margin-bottom: 0;
+
+}
+ul{
+  
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 3em;
+    
+}
+.asside{
+    border: solid 1px black;
+    width: 30em;
+    height: 50em;
+    background-color: #FFDDCC;
+   
+
+}
+.asside .item{
+    
+    background-color: white;
+    border: solid;
+    width: 90%;
+    height: 3em;
+    margin-top:0 ;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-top: 1.5em; 
+    list-style: none;
+}
+.section{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px black;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(158, 251, 161) ;
+    align-content: center;
+    margin:0 ; 
+    
+}
+.section .Article{
+
+    background-color: white;
+    border: solid ;
+    width: 40%;
+    height: 2.5em;
+    margin: 1.5em;   
+    padding-left: 1em;
+    padding-top: 1em;
+    flex-direction: column;
+}
+
+.asside1{
+    border: solid 1px black;
+    width: 30em;
+    height: 50em;
+    background-color: #FFDDCC;
+}
+
+footer{
+    background-color: #CCDDFF;
+    height: 5em;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1.5em;
+
+}
+h5{
+    margin-top: 0;
+ 
+}
+header{
+    margin: 0;
+}
+
+
