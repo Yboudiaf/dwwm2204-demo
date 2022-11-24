@@ -1,0 +1,19 @@
+html{
+   font-size:62.5% ; 
+}
+body{
+    font-size: 1.6em;
+}
+label{
+    background-color: rgb(203, 116, 116);
+}
+input{
+    background-color: aqua;
+}
+fieldset{
+    background-color: rgb(209, 203, 215);
+    border-radius: 10%;
+}
+legend{
+    color: red;
+}
