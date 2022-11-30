@@ -1,0 +1,11 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6em;
+    background-color: rgb(240, 236, 210);
+}
+tr th{
+    background-color:rgb(243, 219, 84);
+  
+}
