@@ -3,9 +3,29 @@ html{
 }
 body{
     font-size: 1.6em;
-    background-color: rgb(240, 236, 210);
+    background-color:#fff;
 }
-tr th{
-    background-color:rgb(243, 219, 84);
-  
+tr:nth-child(2n){
+    background-color: rgb(217, 208, 208);
+    
 }
+td{
+   text-align: center;
+   padding:10px;
+
+   
+    width: 5em;
+}
+th{
+    background-color: #999;
+    color: #fff;
+
+    margin:10px;
+}
+#jeux{ width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
