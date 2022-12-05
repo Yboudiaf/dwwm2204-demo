@@ -2,7 +2,9 @@
 ///Methode xmlhttprequest instanciation de la requete "open()" et "send()"" envoie la requête au serveur. 
 
 //////////////////////////////////////////
+let donnees= [];
 let monxhr = new XMLHttpRequest();
+
 monxhr.open('GET','https://arfp.github.io/tp/web/frontend/cardgame/cardgame.json',true);
 
 monxhr.responseType = "json";
@@ -14,17 +16,16 @@ monxhr.onload = function ()
   if (monxhr.status==200) 
   {
    
-    let container = monxhr.response;
-    create_THead(container);
-    create_Body(container);
+    donnees = monxhr.response;
+    create_THead(donnees);
+    create_Body(donnees);
     create_Legende();
-    console.log(container);
-
+    console.log(donnees);
+/////////////////////////////////// 
+    puissance_armure_max(donnees);
+    puissance_attaque_max(donnees);
     
-    puissance_max_armure(data);
-    puissance_attaque_max(data);
-    plus_de_parties_jouées(data);
-    console.log(data);
+    console.log(donnees);
 
 
   }
@@ -33,15 +34,11 @@ monxhr.onload = function ()
     console.log("erreur : "+ monxhr.status + monxhr.statusText);
   }
 }
+
+///////////////creation tableau jeux/////////////
  const tab = document.querySelector("#jeux");
+///////////////////////////////////////////////
 /////////////////////////////////////////////////
-//////////Creation de celule
-/////////////////////////////////////////////////
-function create_Cellule(maLigne , mesValeurs)
- {
-  let cellule = maLigne.insertCell();
-  cellule.textContent = mesValeurs; 
- }
 
 ////////////////////////////////////////////////
 //creation du tableau contenant les données du fichier json
@@ -89,50 +86,11 @@ function create_Legende()
   let addLegende = legende.createCaption();
   addLegende.textContent = 'Jeux médiéval de cartes.';
 }
+
 /////////////////////////////////////////////////////
 ////////fonction cartes
 /////////////////////////////////////////////////////
-
-function puissance_attaque_max(data)
-{
-  let Valeur_Max_attack = data[0].attack; /////ont defini la carte "Valeur_Max" à la position 0 du tableau data et ont recupere sa valeur "puissance_attaque"
-  let keyMax = 0; ////////Definie la "keyMax" à la carte max
-
-  for(let i=1; i<data.length; i++)////ont parcour le tableau en commenceant par l'indince 1
-     { 
-      if(data[i].attack > Valeur_Max_attack){ /////si le tableau "data" à la position [i] avec sa valeur est plus grande que "Valeur_Max"  
-
-        Valeur_Max_attack = data[i].attack;///// Alors "Valeur_Max" deviens [1] du tableau "data" et prend donc sa valeur "puissance_attaque"
-
-          keyMax = i;
-      }
-     }
-  console.log(puissance_attaque_max(data[i]));
-  return keyMax;
-}
-///////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-function puissance_max_armure(data)
-{
-let valeur_max_armure = data[0].armor;
-let keyMax = 0;
-
-for(let i=1; i<data.length; i++)////ont parcour le tableau en commenceant par l'indince 1
-{
-  if(data[i].armor > valeur_max_armure){ /////si le tableau "data" à la position [i] avec sa valeur est plus grande que "carte_max_armure"  
-
-    valeur_max_armure = data[i].armor;///// Alors "Valeur_Max" deviens [1] du tableau "data" et prend donc sa valeur "max_armure"
-
-      keyMax = i;
-  }
-}
-
-console.log(puissance_max_armure(data[i]));
-return keyMax;
-}
-///////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-function  plus_de_parties_jouées(data)
+function  plus_de_parties_jouer(data)
 {
  let valeur_max_parti_jouees = data[0].played;
  let keyMax = 0;
@@ -141,31 +99,129 @@ function  plus_de_parties_jouées(data)
     {
 
   if(data[i].played > valeur_max_parti_jouees )
-    {
+      {
     valeur_max_parti_jouees = data [i].played;
 
     keyMax = i;
 
+      }
+      
     }
- 
-    }
-console.log(plus_de_parties_jouées(data[i]));
+   
 return keyMax;
 
 }
-function attack(data,keyMax)
+///////////////////////////////////////////
+////////////////////////////////////////
+function  plus_de_parties_gagner(data)
 {
-  document.querySelector("#attackid").innerHTML = data [keyMax].id;
-  document.querySelector("#attackName").innerHTML = data [keyMax].name;
-  document.querySelector("#attackPlayedValue").innerText = data[maxKey].played;
-  document.querySelector("#attackVictoriesValue").innerText = data[maxKey].victory;
-  document.querySelector("#attackPowerValue").innerText = data[maxKey].power;
-  document.querySelector("#attackAttackValue").innerText = data[maxKey].attack;
-  document.querySelector("#attackArmorValue").innerText = data[maxKey].armor;
+ let valeur_max_parti_gagner = data[0].victory;
+ let keyMax = 0;
+
+ for (let i = 1; i < data.length; i++)
+    {
+
+  if(data[i].victory > valeur_max_parti_gagner )
+      {
+        valeur_max_parti_gagner = data [i].victory;
+
+    keyMax = i;
+
+      }
+      
+    }
+   
+return keyMax;
+
 }
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////
 
+function puissance_attaque_max(data)
+{
+  let Valeur_Max_attack = data[0].attack;  /////ont defini la carte "Valeur_Max" à la position 0 du tableau data et ont recupere sa valeur "puissance_attaque"
+  let keyMax = 0; ////////Definie la "keyMax" à la carte max
 
+  for(let i=1; i < data.length; i++)////ont parcour le tableau en commenceant par l'indince 1
+     { 
+      if(data[i].attack > Valeur_Max_attack){ /////si le tableau "data" à la position [i] avec sa valeur est plus grande que "Valeur_Max"  
 
+        Valeur_Max_attack = data[i].attack;///// Alors "Valeur_Max" deviens [1] du tableau "data" et prend donc sa valeur "puissance_attaque"
+
+          keyMax = i;
+      } 
+     
+  
+     
+     }
+       return keyMax;
+   
+ } 
+///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+function puissance_armure_max(data)
+{
+let valeur_max_armure = data[0].armor;
+let keyMax = 0;
+
+for(let i=1; i<data.length; i++)////ont parcour le tableau en commenceant par l'indince 1
+{
+  if(data[i].armor < valeur_max_armure){ /////si le tableau "data" à la position [i] avec sa valeur est plus grande que "carte_max_armure"  
+
+    valeur_max_armure = data[i].armor;///// Alors "Valeur_Max" deviens [1] du tableau "data" et prend donc sa valeur "max_armure"
+
+      keyMax = i;
+  }
+  
+}
+return keyMax;
+}
+///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+/////////////boutton played
+/////////////////////////////////////////////////////
+document.getElementById("btn_played").addEventListener("click",function()
+{
+  let indice_played= plus_de_parties_jouer(donnees);
+  console.log(donnees[indice_played].name); 
+ 
+
+}
+)
+/////////////////////////////////////////////////////
+/////////////boutton victories
+/////////////////////////////////////////////////////
+document.getElementById("btn_victory").addEventListener("click",function()
+{
+ 
+  let indice_victory= plus_de_parties_gagner(donnees);
+  console.log(donnees[indice_victory].name);    
+
+}
+)
+/////////////////////////////////////////////////////
+//////////////boutton damage
+/////////////////////////////////////////////////////
+document.getElementById("btn_damage").addEventListener("click",function()
+{
+ 
+  let indice_damage= puissance_armure_max(donnees);
+  console.log(donnees[indice_damage].name);    
+}
+)
+/////////////////////////////////////////////////////
+//////////////boutton attaque
+/////////////////////////////////////////////////////
+
+document.getElementById("btn_attack").addEventListener("click",function()
+{
+  let indice_attack= puissance_attaque_max(donnees);
+  console.log(donnees[indice_attack].name);    
+
+}
+)
 
 
 
