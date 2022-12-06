@@ -186,7 +186,13 @@ document.getElementById("btn_played").addEventListener("click",function()
 {
   let indice_played= plus_de_parties_jouer(donnees);
   console.log(donnees[indice_played].name); 
- 
+
+  document.getElementById("player_name").innerHTML = donnees[indice_played].id
+  document.getElementById("player_name").innerHTML = donnees[indice_played].name
+  document.getElementById("player_name").innerHTML = donnees[indice_played].attack
+  document.getElementById("player_name").innerHTML = donnees[indice_played].victory
+  document.getElementById("player_name").innerHTML = donnees[indice_played].played
+  document.getElementById("player_name").innerHTML = donnees[indice_played].armor
 
 }
 )
@@ -197,7 +203,15 @@ document.getElementById("btn_victory").addEventListener("click",function()
 {
  
   let indice_victory= plus_de_parties_gagner(donnees);
-  console.log(donnees[indice_victory].name);    
+  console.log(donnees[indice_victory].name); 
+
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].id
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].name
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].attack
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].victory
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].played
+  document.getElementById("Victory").innerHTML = donnees[indice_victory].armor
+ 
 
 }
 )
@@ -208,7 +222,14 @@ document.getElementById("btn_damage").addEventListener("click",function()
 {
  
   let indice_damage= puissance_armure_max(donnees);
-  console.log(donnees[indice_damage].name);    
+  console.log(donnees[indice_damage].name); 
+  
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].id
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].name
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].attack
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].victory
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].played
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].armor
 }
 )
 /////////////////////////////////////////////////////
@@ -218,12 +239,17 @@ document.getElementById("btn_damage").addEventListener("click",function()
 document.getElementById("btn_attack").addEventListener("click",function()
 {
   let indice_attack= puissance_attaque_max(donnees);
-  console.log(donnees[indice_attack].name);    
+  console.log(donnees[indice_attack].name);  
+
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].id
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].name
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].attack
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].victory
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].played
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].armor
 
 }
 )
-
-
 
 
 
