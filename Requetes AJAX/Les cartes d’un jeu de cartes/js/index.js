@@ -115,15 +115,15 @@ return keyMax;
 ////////////////////////////////////////
 function  plus_de_parties_gagner(data)
 {
- let valeur_max_parti_gagner = data[0].victory;
+ let valeur_max_parti_gagner = data[0].victories;
  let keyMax = 0;
 
  for (let i = 1; i < data.length; i++)
     {
 
-  if(data[i].victory > valeur_max_parti_gagner )
+  if(data[i].victories > valeur_max_parti_gagner )
       {
-        valeur_max_parti_gagner = data [i].victory;
+        valeur_max_parti_gagner = data [i].victories;
 
     keyMax = i;
 
@@ -187,30 +187,30 @@ document.getElementById("btn_played").addEventListener("click",function()
   let indice_played= plus_de_parties_jouer(donnees);
   console.log(donnees[indice_played].name); 
 
-  document.getElementById("player_name").innerHTML = donnees[indice_played].id
-  document.getElementById("player_name").innerHTML = donnees[indice_played].name
-  document.getElementById("player_name").innerHTML = donnees[indice_played].attack
-  document.getElementById("player_name").innerHTML = donnees[indice_played].victory
-  document.getElementById("player_name").innerHTML = donnees[indice_played].played
-  document.getElementById("player_name").innerHTML = donnees[indice_played].armor
+  document.getElementById("played").innerHTML = donnees[indice_played].id
+  document.getElementById("played").innerHTML = donnees[indice_played].name
+  document.getElementById("played").innerHTML = donnees[indice_played].attack
+  document.getElementById("played").innerHTML = donnees[indice_played].victories
+  document.getElementById("played").innerHTML = donnees[indice_played].played
+  document.getElementById("played").innerHTML = donnees[indice_played].armor
 
 }
 )
 /////////////////////////////////////////////////////
 /////////////boutton victories
 /////////////////////////////////////////////////////
-document.getElementById("btn_victory").addEventListener("click",function()
+document.getElementById("btn_victories").addEventListener("click",function()
 {
  
-  let indice_victory= plus_de_parties_gagner(donnees);
-  console.log(donnees[indice_victory].name); 
+  let indice_victories= plus_de_parties_gagner(donnees);
+  console.log(donnees[indice_victories].name); 
 
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].id
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].name
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].attack
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].victory
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].played
-  document.getElementById("Victory").innerHTML = donnees[indice_victory].armor
+  document.getElementById("victories").innerHTML = donnees[indice_victories].id
+  document.getElementById("victories").innerHTML = donnees[indice_victories].name
+  document.getElementById("victories").innerHTML = donnees[indice_victories].attack
+  document.getElementById("victories").innerHTML = donnees[indice_victories].victories
+  document.getElementById("victories").innerHTML = donnees[indice_victories].played
+  document.getElementById("victories").innerHTML = donnees[indice_victories].armor
  
 
 }
@@ -227,7 +227,7 @@ document.getElementById("btn_damage").addEventListener("click",function()
   document.getElementById("Defense").innerHTML = donnees[indice_damage].id
   document.getElementById("Defense").innerHTML = donnees[indice_damage].name
   document.getElementById("Defense").innerHTML = donnees[indice_damage].attack
-  document.getElementById("Defense").innerHTML = donnees[indice_damage].victory
+  document.getElementById("Defense").innerHTML = donnees[indice_damage].victories
   document.getElementById("Defense").innerHTML = donnees[indice_damage].played
   document.getElementById("Defense").innerHTML = donnees[indice_damage].armor
 }
@@ -244,7 +244,7 @@ document.getElementById("btn_attack").addEventListener("click",function()
   document.getElementById("Attack").innerHTML = donnees[indice_attack].id
   document.getElementById("Attack").innerHTML = donnees[indice_attack].name
   document.getElementById("Attack").innerHTML = donnees[indice_attack].attack
-  document.getElementById("Attack").innerHTML = donnees[indice_attack].victory
+  document.getElementById("Attack").innerHTML = donnees[indice_attack].victories
   document.getElementById("Attack").innerHTML = donnees[indice_attack].played
   document.getElementById("Attack").innerHTML = donnees[indice_attack].armor
 

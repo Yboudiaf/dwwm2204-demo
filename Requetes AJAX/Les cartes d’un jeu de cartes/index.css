@@ -9,13 +9,13 @@ body{
 }
 tr:nth-child(2n){
     background-color: rgb(217, 208, 208);
-    
+
 }
 td{
    text-align: center;
    padding:10px;
 
-   
+
     width: 5em;
 }
 th{
@@ -51,7 +51,7 @@ margin-right: auto;
 #charactere {
     grid-area: H1 ;
     height: 15rem;
-    width: 20rem;
+  
     color: #fff;
     background-color: rgb(9, 85, 9);
     text-align: center;
@@ -60,13 +60,13 @@ margin-right: auto;
     grid-area: T;
     background-color: rgb(9, 85, 9);
     height: 15rem;
-    width: 40rem;
+   
 }
 
 
 #img_armure {
     grid-area: IMG ;
-    width: 40rem;
+    
     height: 40rem;
 
 }
@@ -74,36 +74,35 @@ margin-right: auto;
 
 #Power{
     height: 20rem;
-    width: 20rem;
+ 
     grid-area: POW ;
     color: #fff;
-    background-color:gray;
-   
+    background-color:rgb(52, 51, 51);
+
 
 }
 #Attack{
     height: 20rem;
-    width: 20rem;
+  
     grid-area: ATK ;
     color: #fff;
-    background-color:yellow;
-  
+    background-color:rgb(52, 51, 51);
+
 
 }
 #Defense{
     height: 20rem;
-    width: 20rem;
+  
     grid-area: DEF ;
     color: #fff;
-    background-color:blue;
-    
+    background-color:rgb(52, 51, 51);
+
 }
 
 #footer{
     height: 15rem;
     grid-area: F;
-    width: 60rem;
-    background-color: aqua;
+    background-color:rgb(52, 51, 51);
 }
 
 caption{
