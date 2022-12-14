@@ -4,9 +4,9 @@ let data = [] ;
 fetch("employees.json")
  .then(response => {return response.json()} )
  .then(response => {
-
+  
   data= response;
-  console.log(data);
+console.log(data)
 
    create_EID(data);
    console.log(data);
@@ -47,12 +47,11 @@ let tab = document.querySelector("#tableau_employees");
             {
             let nouvelle_cellule = nouvelle_ligne.insertCell(i);
 
-             nouvelle_cellule.textContent = data[i][key];  
+             nouvelle_cellule.innerText = data[i][key];  
 
             }
      }
- }create_EID(data)
- 
+ }
  
 ///////////////////////////////////////////////////
 ////////////Creation ligne et cellule Nom et Prenom
@@ -68,12 +67,12 @@ let tab = document.querySelector("#tableau_employees");
 
     for(const key in data[i])
     {
-      let nouvelle_cellule = nouvelle_ligne.insertCell().create_full_name;
+      let nouvelle_cellule = nouvelle_ligne.insertCell()
 
-      nouvelle_cellule.textContent = data[i][key];
+      nouvelle_cellule.innerText = data[i][key];
     }
   }
- }create_full_name(data)
+ }
 ///////////////////////////////////////////////////
 ////////////Creation ligne et cellule Email
 ///////////////////////////////////////////////////
@@ -92,7 +91,7 @@ let tab = document.querySelector("#tableau_employees");
       nouvelle_cellule.textContent = data[i][key];
     }
   }
- }create_Email(data)
+ }
  /////////////////////////////////////////////////
  //////////Creation ligne et cellule salaire mensuel
  /////////////////////////////////////////////////
@@ -111,7 +110,7 @@ let tab = document.querySelector("#tableau_employees");
       nouvelle_cellule.textContent = data[i][key];
     }
   }
- }create_monthly_salary(data)
+ }
 ///////////////////////////////////////////////////
 ////////////Creation ligne et cellule Date anniversaire
 ///////////////////////////////////////////////////
@@ -131,4 +130,3 @@ let tab = document.querySelector("#tableau_employees");
     }
   }
 }
-create_year_of_birth(data)

@@ -47,22 +47,21 @@ function rechercherParNom(data)
     }   
   }
   ;
-  const container = document.getElementById("liste_cp_ville");
-  var tabchildren=[];
-  for (var i = 0; i <document.getElementById("liste_cp_ville").children.length; i++) {
-    document.getElementById("liste_cp_ville").children[i].remove();
-  }
-console.log(tabchildren);
-  for (var i = 0; i < tabchildren.length; i++) {
-    container.children[i].remove();
-  }
+let container = document.getElementById("container");
+while( container.firstChild) {
 
-  for (let j = 0; j < resultat.length; j++) 
+  container.removeChild(container.firstChild);
+}
+
+
+  let mon_ul= document.createElement("ul");
+ for (let j = 0; j < resultat.length; j++) 
   {
     let mon_item = document.createElement("li");
     mon_item.textContent = resultat[j];
-    container.appendChild(mon_item);    
+    mon_ul.appendChild(mon_item);    
   }
+  container.appendChild(mon_ul);
 }
 ///////////////////////////////////////////////
 ///////////////Rechercher par code postal
@@ -83,23 +82,23 @@ function recherche_par_cp(data)
     } 
   }
   console.log(resultat);
-  const container = document.getElementById("liste_cp_ville");
-  
-  var tabchildren=[];
-  if (container.hasChildNodes()) {
-     tabchildren = container.childNodes; 
-  }
+  const container = document.getElementById("container");
+  while( container.firstChild) {
 
-  console.log(tabchildren);
-  for (var i = 0; i <document.getElementById("liste_cp_ville").children.length; i++) {
-    document.getElementById("liste_cp_ville").children[i].remove();
+    container.removeChild(container.firstChild);
   }
+  
+
+  let mon_ul = document.createElement("ul");
+
+ 
   for (let j = 0; j < resultat.length; j++) 
   {
     let mon_item = document.createElement("li");
     mon_item.textContent = resultat[j];
-    container.appendChild(mon_item);    
+    mon_ul.appendChild(mon_item);    
   }
+  container.appendChild(mon_ul);
 }
 
 document.getElementById("btnValid").addEventListener("click", function()
