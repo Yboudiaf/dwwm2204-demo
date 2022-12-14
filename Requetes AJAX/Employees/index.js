@@ -30,6 +30,8 @@ console.log(data)
 ////////////////////creation tableau /////////////////////////////
 /////////////////////////////////////////////////
 let tab = document.querySelector("#tableau_employees");
+
+
 ///////////////////////////////////////////////////
 ////////////Creation ligne et cellule ID
 ///////////////////////////////////////////////////
@@ -45,7 +47,7 @@ let tab = document.querySelector("#tableau_employees");
         
          for (const key in data[i])
             {
-            let nouvelle_cellule = nouvelle_ligne.insertCell(i);
+            let nouvelle_cellule = nouvelle_ligne.insertCell();
 
              nouvelle_cellule.innerText = data[i][key];  
 
@@ -86,7 +88,7 @@ let tab = document.querySelector("#tableau_employees");
 
     for(const key in data[i])
     {
-      let nouvelle_cellule = nouvelle_ligne.insertCell().create_Email;
+      let nouvelle_cellule = nouvelle_ligne.insertCell();
 
       nouvelle_cellule.textContent = data[i][key];
     }
@@ -105,7 +107,7 @@ let tab = document.querySelector("#tableau_employees");
 
     for(const key in data[i])
     {
-      let nouvelle_cellule = nouvelle_ligne.insertCell().create_monthly_salary;
+      let nouvelle_cellule = nouvelle_ligne.insertCell(i);
 
       nouvelle_cellule.textContent = data[i][key];
     }
@@ -124,7 +126,7 @@ let tab = document.querySelector("#tableau_employees");
 
     for(const key in data[i])
     {
-      let nouvelle_cellule = nouvelle_ligne.insertCell().create_year_of_birth;
+      let nouvelle_cellule = nouvelle_ligne.insertCell(i);
 
       nouvelle_cellule.textContent = data[i][key];
     }
