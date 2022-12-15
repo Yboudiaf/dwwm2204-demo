@@ -6,7 +6,7 @@ fetch("employees.json")
  .then(response => {
   
   data= response;
-console.log(data)
+  console.log(data)
 
    create_EID(data);
    console.log(data);
@@ -17,10 +17,10 @@ console.log(data)
    create_Email(data);
    console.log(data);
 
-   create_monthly_salary(data);
+   create_monthly_salary();
    console.log(data);
 
-  create_year_of_birth(data);
+  create_year_of_birth();
   console.log(data);
 } )
 
@@ -118,7 +118,7 @@ let tab = document.querySelector("#tableau_employees");
 ///////////////////////////////////////////////////
  function create_year_of_birth(data)
  {
-  let Year_of_birth = document.querySelector("#Year_of_birth");
+  let Year_of_birth = document.querySelector("#Year_of_births");
 
   for(let i = 0; i < data.length; i ++)
   {
