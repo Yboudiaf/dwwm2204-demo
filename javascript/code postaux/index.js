@@ -47,6 +47,7 @@ function rechercherParNom(data)
     }   
   }
   ;
+  
 let container = document.getElementById("container");
 while( container.firstChild) {
 

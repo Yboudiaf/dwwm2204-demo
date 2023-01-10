@@ -1,0 +1,51 @@
+
+body{
+    background: lightblue;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(222, 196, 196);
+    border-radius: 20px 20px;
+    margin: 0;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(226, 221, 210);
+    border-radius: 20px 20px ;
+    margin: 0;
+}
+hr{
+    margin: 0;
+}
+
+p{
+ text-align: justify; 
+}
+
+div{
+    font-size: 10px;;
+}
+table{
+margin-right: auto;
+margin-left: auto;
+border-collapse: collapse;
+width: 500px;
+ 
+
+    
+}
+caption{
+    background-color: white
+}
+th{
+    border: solid white;
+    
+}
+td{
+   
+    border: solid white;
+    padding-left: 5px;
+}
+

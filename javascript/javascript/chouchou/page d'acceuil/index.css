@@ -1,0 +1,60 @@
+
+element.style {
+}
+feuille de style user-agent
+head {
+    display: none;
+}
+:root {
+    --color_0: 0,0,0;
+    --color_27: 140,179,187;
+    --color_1: 255,255,255;
+    --color_2: 0,0,0;
+    --color_3: 237,28,36;
+    --color_4: 0,136,203;
+    --color_5: 255,203,5;
+    --color_6: 114,114,114;
+    --color_7: 176,176,176;
+    --color_8: 255,255,255;
+    --color_28: 76,140,153;
+    --color_9: 114,114,114;
+    --color_10: 176,176,176;
+    --color_11: 255,255,255;
+    --color_12: 216,216,216;
+    --color_13: 165,165,165;
+    --color_14: 101,101,101;
+    --color_15: 0,0,0;
+    --color_16: 255,170,170;
+    --color_17: 255,127,127;
+    --color_18: 255,0,0;
+    --color_29: 51,93,102;
+    --color_19: 169,0,0;
+    --color_20: 84,0,0;
+    --color_21: 252,241,168;
+    --color_22: 249,233,124;
+    --color_23: 247,214,0;
+    --color_24: 164,142,0;
+    --color_25: 82,71,0;
+    --color_30: 25,46,51;
+    --color_31: 224,161,224;
+    --color_32: 193,112,193;
+    --color_33: 163,26,163;
+    --color_34: 108,17,108;
+    --color_35: 54,8,54;
+    --font_0: normal normal normal 27px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_1: normal normal normal 13px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_2: normal normal normal 22px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_3: normal normal normal 60px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_4: normal normal normal 40px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_5: normal normal normal 26px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_6: normal normal normal 17px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_7: normal normal normal 16px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_8: normal normal normal 13px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_9: normal normal normal 12px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --font_10: normal normal normal 10px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
+    --wix-ads-height: 38px;
+    --wix-ads-top-height: 38px;
+    --site-width: 320px;
+    --above-all-z-index: 100000;
+
+}

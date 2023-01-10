@@ -1,0 +1,113 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    background-color:black;
+}
+tr:nth-child(2n){
+    background-color: rgb(217, 208, 208);
+
+}
+td{
+   text-align: center;
+   padding:10px;
+
+
+    width: 5em;
+}
+th{
+    background-color: #999;
+    color: #fff;
+
+    margin:10px;
+}
+
+#jeux{ width: 50%;
+  padding-left: 0;
+margin-left: auto;
+margin-right: auto;
+background-color: rgb(238, 238, 228);
+
+}
+
+#carte{
+    background-color:black ;
+    width: 60rem;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: repeat(5, auto) ;
+    grid-template-columns: 12rem 1fr 12rem;
+    grid-template-areas:    "H1 T T " 
+                            "IMG IMG POW "
+                            "IMG IMG ATK "
+                            "IMG IMG DEF "
+                            "F F F";
+}
+
+#charactere {
+    grid-area: H1 ;
+    height: 15rem;
+  
+    color: #fff;
+    background-color: rgb(9, 85, 9);
+    text-align: center;
+}
+#played_victories{
+    grid-area: T;
+    background-color: rgb(9, 85, 9);
+    height: 15rem;
+   
+}
+
+
+#img_armure {
+    grid-area: IMG ;
+    
+    height: 40rem;
+
+}
+
+
+#Power{
+    height: 20rem;
+ 
+    grid-area: POW ;
+    color: #fff;
+    background-color:rgb(52, 51, 51);
+
+
+}
+#Attack{
+    height: 20rem;
+  
+    grid-area: ATK ;
+    color: #fff;
+    background-color:rgb(52, 51, 51);
+
+
+}
+#Defense{
+    height: 20rem;
+  
+    grid-area: DEF ;
+    color: #fff;
+    background-color:rgb(52, 51, 51);
+
+}
+
+#footer{
+    height: 15rem;
+    grid-area: F;
+    background-color:rgb(52, 51, 51);
+}
+
+caption{
+    font-size:xx-large;
+    font-weight: bolder;
+    color:  rgb(9, 85, 9);
+}
