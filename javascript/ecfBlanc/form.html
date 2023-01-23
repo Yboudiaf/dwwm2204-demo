@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form 
+        action="form.js"
+        method="post" 
+        id="formulaire">
+
+            <fieldset 
+                id="formulaire_test_js" >
+
+            <legend 
+                id="legend" >BDJ
+            </legend>
+            <br><br>
+
+            <label 
+                for="capital emprunter">Capital emprunter
+                <input
+                    type="text"
+                    name="capital_emprunter"
+                    id="capital_emprunter">
+
+            </label>
+            <br><br>
+
+            <label 
+                for="taux d'emprunt">Taux d'emprunt
+                <input
+                    type="text"
+                    name="taux_emprunt"
+                    id="taux_emprunt">
+            </label>
+            <br><br>
+            <label 
+                for="nombre de jour">Nombre de jours
+                <input
+                    type="text"
+                    name="nombre_de_jour"
+                    id="nombre_de_jour">
+            </label>
+            <br><br>
+
+            <label 
+            for="Mensualiter">Mensualiter
+            <input
+                    type="text"
+                    name="Mensualiter"
+                    id="Mensualiter" 
+                    readonly="readonly"
+                    >
+            </label>
+            <br><br>
+
+            <input
+                    type="submit"
+                    value="valider"
+                    id="btn_submit">
+
+            </fieldset>
+            <br><br>
+    </form>
+    
+</body>
+</html>

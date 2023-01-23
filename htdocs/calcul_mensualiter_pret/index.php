@@ -23,37 +23,100 @@ if(isset($_POST["validation"]))
 ?>
 
 
-    <form action="index.php" method="POST"  >Simulation de prêt <br><br>
+<form action="index.php"
+ method="POST"  >  Simulation de prêt
 
-    <fieldset id="fieldset"><legend id="legend">calcul d'une mensualité d'un prêt </legend>
+      <br><br>
+         
+<fieldset id="fieldset">
+    <legend id="legend">
+        calcul d'une mensualité d'un prêt 
+    </legend>
+        
+        <label for="Capital emprunté"> Capital emprunté :
+                <input
+                type="text"
+                name="capital"
+                class="input"
+                id="capital"
+                placeHolder="Capital emprunté"
+                >
+         </label>     
+       <br><br>
 
-        <label for="Capital emprunté">Capital emprunté :
-            <input type="text" name="capital" class="input" id="capital" placeHolder="Capital emprunté"> <br><br>
-        </label>
+        <label for="taux intérêt"> Taux intérêt en % :   
+                <input
+                type="text"
+                name="taux_interet" 
+                class="input" 
+                id="taux_interet"
+                placeHolder="Taux intérêt"
+             > 
 
-        <label for="taux intérêt">Taux intérêt en % :
-            <input type="text" name="taux_interet" class="input" id="taux_interet" placeHolder="Taux intérêt"> <br><br>
+             <br><br>
          </label>
 
-         <label for="">Durée de remboursement en nb d'année :
-            <input type="text" name="duree" class="input" id="duree"placeHolder="Durée"> <br><br>
+         <label for="Durée de remboursement en nb d'année "> Durée de remboursement en nb d'année :
+                <input
+                type="text"
+                name="duree"
+                class="input"
+                id="duree"
+                placeHolder="Durée"
+                >
+
+              <br><br>
         </label>
 
-         <input type="submit" value="valider" name="validation" id="validation">
+         <input
+                type="submit"
+                value="valider" 
+                name="validation"
+                id="validation"
+                >
 
-        <label for="mensualité">Mensualité :
-             <input type="text" name="mensualite" class="input" id="mensualite" placeHolder="Mensualité" readonly="readonly" value="<?php if(isset($_POST["validation"]))
-{echo $mensualité_dossier;}?>"><br><br>
+        <label for="mensualité">Mensualité :        
+             <input
+                type="text"
+                name="mensualite"
+                class="input" 
+                id="mensualite"
+                placeHolder="Mensualité" 
+                readonly="readonly"
+                value="<?php if(isset($_POST["validation"])) {echo $mensualité_dossier;}?>"
+                >
+
         </label>
 
-        <label for="">Tableau de rembouresements(d'amortissements)du prêt <br>
-            <textarea name="zone_saisie" id="zone_saisie" placeHolder="zone texte" cols="40" rows="10"> </textarea>
-        </label>
-    </fieldset>
-    </form>
-    <br><br>
+        <br><br>
 
-    <table class="table table-success table-striped" id="table" name="table" width="60" height="50"> TABLEAU AMORTISSEMENT DU PRET: <br><br>
+        <label 
+            for=" Tableau de rembouresements(d'amortissements)du prêt">TableauX de rembouresements(d'amortissements)du prêt <br>   
+            <textarea 
+            name="zone_saisie"
+            id="zone_saisie" 
+            placeHolder="zone texte" 
+            cols="40" 
+            rows="10">
+             </textarea>
+
+        </label>
+
+ </fieldset>
+
+</form> 
+  <br><br>
+
+
+  
+
+    <table 
+        class="table table-success table-striped" 
+        id="table" 
+        name="table"
+        width="60"
+        height="50">
+         TABLEAU AMORTISSEMENT DU PRET: <br><br>
             <thead>
                 <tr>
        
